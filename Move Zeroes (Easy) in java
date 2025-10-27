@@ -1,0 +1,15 @@
+
+6. Move Zeroes (Easy/Medium)
+
+Problem: Move all 0’s to the end while keeping order.
+
+class Solution {
+    public void moveZeroes(int[] nums) {
+        int pos = 0;
+        for (int n : nums) if (n != 0) nums[pos++] = n;
+        while (pos < nums.length) nums[pos++] = 0;
+    }
+}
+
+
+Concept: Two-pointer shift.
